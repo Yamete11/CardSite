@@ -4,12 +4,12 @@
 
 <script>
 export default {
-  name: "ProjectPage",
-  components: {}
-
+  name: "ContactPage"
 }
 </script>
 
 <style scoped>
-
+p{
+  color: white;
+}
 </style>

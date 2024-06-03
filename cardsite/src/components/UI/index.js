@@ -1,5 +1,5 @@
-import Navbar from "./Navbar.vue"
+import MyNavbar from "./Navbar.vue"
 
 export default [
-    Navbar
+    MyNavbar
 ]

@@ -1,10 +1,11 @@
 <template>
-  <navbar></navbar>
+  <my-navbar></my-navbar>
 </template>
 
 <script>
 export default {
-  name: "AboutItem"
+  name: "AboutPage",
+  components: {}
 }
 </script>
 

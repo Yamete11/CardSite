@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    Hello
+    <router-view></router-view>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
 
 <style>
 body, html{
-  background-color: #F1DEC9;
+  background-color: #2C3531;
   margin: 0;
   padding: 0;
   height: 100%;
