@@ -13,6 +13,7 @@
       <a href="https://github.com/Yamete11">See more projects...</a>
     </div>
     <ProjectModal :project="project" :show-modal="showModal" @close="showModal = false" />
+    <my-footer></my-footer>
   </div>
 </template>
 

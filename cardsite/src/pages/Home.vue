@@ -13,6 +13,7 @@
         </h1>
       </div>
     </div>
+    <my-footer></my-footer>
   </div>
 </template>
 

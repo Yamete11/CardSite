@@ -14,7 +14,9 @@
       </a>
       <div class="email-container" @click="showEmail = true">
         <img v-if="!showEmail" src="../assets/9034975_logo_google_icon.png" alt="Google">
-        <span v-else>{{ email }}</span>
+        <span v-else @click="copyText">{{ email }}
+          <span v-if="emailCopied" class="copied-sign">Copied</span>
+        </span>
       </div>
     </div>
   </div>
@@ -26,7 +28,24 @@ export default {
   data() {
     return {
       showEmail: false,
-      email: "hlib.ivanov11@gmail.com"
+      email: "hlib.ivanov11@gmail.com",
+      emailCopied: false // Track whether email is copied
+    }
+  },
+  methods:{
+    copyText() {
+      const textToCopy = this.email;
+      navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            console.log('Text copied to clipboard');
+            this.emailCopied = true; // Set emailCopied to true after copying
+            setTimeout(() => {
+              this.emailCopied = false; // Reset emailCopied after a short delay
+            }, 2000); // Adjust delay as needed
+          })
+          .catch(err => {
+            console.error('Failed to copy text: ', err);
+          });
     }
   }
 }
@@ -61,12 +80,24 @@ img:hover {
   opacity: 1;
 }
 
-span{
+span {
   display: block;
   margin-top: 10px;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.copied-sign {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
 }
 </style>
