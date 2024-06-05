@@ -17,12 +17,12 @@ export default {
 
 <style>
 body, html{
-  background-color: #2C3531;
+  background-color: #171717;
   margin: 0;
   padding: 0;
   height: 100%;
 }
-h1, h2{
+h1, h2, p{
   color: #FFFFFF;
 }
 </style>

@@ -27,8 +27,7 @@ export default {
 <style scoped>
 .content-main{
   display: flex;
-  flex-direction: column;
-  background-color: #2C3531;
+  background-color: #171717;
   height: 92vh;
   padding-top: 8vh;
 }
