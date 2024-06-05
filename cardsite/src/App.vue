@@ -22,7 +22,7 @@ body, html{
   padding: 0;
   height: 100%;
 }
-h1{
+h1, h2{
   color: #FFFFFF;
 }
 </style>
