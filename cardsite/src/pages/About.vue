@@ -4,11 +4,13 @@
     <div class="content">
       <div class="skills">
         <h1>Skills</h1>
-        <h2>Java</h2>
-        <h2>C#, Entity Framework</h2>
-        <h2>JavaScript, Vue.js</h2>
-        <h2>SQL, PL/SQL, Transact-SQL</h2>
-        <h2>REST API</h2>
+        <ul>
+          <li>Java</li>
+          <li>C#, Entity Framework</li>
+          <li>JavaScript, Vue.js</li>
+          <li>SQL, PL/SQL, Transact-SQL</li>
+          <li>REST API</li>
+        </ul>
       </div>
       <div class="education">
         <h1>Education:</h1>

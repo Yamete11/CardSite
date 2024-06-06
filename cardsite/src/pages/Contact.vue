@@ -29,7 +29,7 @@ export default {
     return {
       showEmail: false,
       email: "hlib.ivanov11@gmail.com",
-      emailCopied: false // Track whether email is copied
+      emailCopied: false
     }
   },
   methods:{
@@ -38,10 +38,10 @@ export default {
       navigator.clipboard.writeText(textToCopy)
           .then(() => {
             console.log('Text copied to clipboard');
-            this.emailCopied = true; // Set emailCopied to true after copying
+            this.emailCopied = true;
             setTimeout(() => {
-              this.emailCopied = false; // Reset emailCopied after a short delay
-            }, 2000); // Adjust delay as needed
+              this.emailCopied = false;
+            }, 2000);
           })
           .catch(err => {
             console.error('Failed to copy text: ', err);

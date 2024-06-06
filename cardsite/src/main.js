@@ -11,6 +11,7 @@ components.forEach(component => {
     app.component(component.name, component);
 });
 
+
 app
     .use(router)
     .mount('#app');

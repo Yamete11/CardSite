@@ -1,8 +1,8 @@
 <template>
   <div class="modal-overlay" v-if="showModal" @click="closeModal">
     <div class="modal-content">
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.description }}</p>
+      <h2>Hoteru</h2>
+      <p>This is a hotel reservation application</p>
     </div>
   </div>
 </template>
@@ -11,7 +11,6 @@
 export default {
   name: "ProjectModal",
   props: {
-    project: Object,
     showModal: Boolean
   },
   methods: {
@@ -36,8 +35,20 @@ export default {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: gray;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
 }
 </style>

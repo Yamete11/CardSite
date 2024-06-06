@@ -12,15 +12,13 @@
       </div>
       <a href="https://github.com/Yamete11">See more projects...</a>
     </div>
-    <ProjectModal :project="project" :show-modal="showModal" @close="showModal = false" />
+    <ProjectModal :show-modal="showModal" @close="showModal = false" />
     <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-
-
-import ProjectModal from "@/components/UI/ProjectModal";
+import ProjectModal from "@/components/UI/ProjectModal.vue";
 
 export default {
   name: "ProjectPage",
@@ -40,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.content-main{
+.content-main {
   display: flex;
   flex-direction: column;
   background-color: #171717;
@@ -66,7 +64,7 @@ export default {
   flex-grow: 1;
 }
 
-.project{
+.project {
   border: white 1px solid;
   border-radius: 10px;
   padding: 50px;
@@ -74,7 +72,7 @@ export default {
   margin-bottom: 20vh;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -82,7 +80,7 @@ a{
   transition: opacity 0.5s ease;
 }
 
-a:hover{
+a:hover {
   opacity: 1;
 }
 </style>

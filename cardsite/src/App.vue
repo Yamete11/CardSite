@@ -22,7 +22,11 @@ body, html{
   padding: 0;
   height: 100%;
 }
-h1, h2, p{
+h1, h2, p, li{
   color: #FFFFFF;
+}
+
+li{
+  font-size: 20px;
 }
 </style>
