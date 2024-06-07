@@ -70,6 +70,13 @@ export default {
   padding: 50px;
   color: white;
   margin-bottom: 20vh;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.project:hover{
+  opacity: 1;
 }
 
 a {
