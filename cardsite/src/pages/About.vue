@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .content-main{
   display: flex;
-  background-color: #171717;
+  background-color: white;
   height: 92vh;
   padding-top: 8vh;
 }
@@ -50,4 +50,11 @@ export default {
   justify-content: space-around;
   flex-grow: 1;
 }
+
+
+.content div h1, .content div h2, .content div li {
+  position: relative;
+  color: black;
+}
+
 </style>

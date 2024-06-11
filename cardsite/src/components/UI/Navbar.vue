@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="navbar-title">
-      <h1 @click="goHome()">YameteKudasai</h1>
+      <h1 @click="goHome()">Help me find a job in IT</h1>
     </div>
     <div class="navbar-links">
       <router-link class="navbar-btn" to="/">Home</router-link>
